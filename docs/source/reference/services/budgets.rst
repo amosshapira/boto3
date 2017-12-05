@@ -121,7 +121,13 @@ Client
               'CostTypes': {
                   'IncludeTax': True|False,
                   'IncludeSubscription': True|False,
-                  'UseBlended': True|False
+                  'UseBlended': True|False,
+                  'IncludeRefund': True|False,
+                  'IncludeCredit': True|False,
+                  'IncludeUpfront': True|False,
+                  'IncludeRecurring': True|False,
+                  'IncludeOtherSubscription': True|False,
+                  'IncludeSupport': True|False
               },
               'TimeUnit': 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY',
               'TimePeriod': {
@@ -193,16 +199,34 @@ Client
         
     
   
-      - **CostTypes** *(dict) --* **[REQUIRED]** This includes the options for getting the cost of a budget.
+      - **CostTypes** *(dict) --* This includes the options for getting the cost of a budget.
 
       
-        - **IncludeTax** *(boolean) --* **[REQUIRED]** A generic boolean value.
+        - **IncludeTax** *(boolean) --* A boolean value whether to include tax in the cost budget.
 
         
-        - **IncludeSubscription** *(boolean) --* **[REQUIRED]** A generic boolean value.
+        - **IncludeSubscription** *(boolean) --* A boolean value whether to include subscriptions in the cost budget.
 
         
-        - **UseBlended** *(boolean) --* **[REQUIRED]** A generic boolean value.
+        - **UseBlended** *(boolean) --* A boolean value whether to use blended costs in the cost budget.
+
+        
+        - **IncludeRefund** *(boolean) --* A boolean value whether to include refunds in the cost budget.
+
+        
+        - **IncludeCredit** *(boolean) --* A boolean value whether to include credits in the cost budget.
+
+        
+        - **IncludeUpfront** *(boolean) --* A boolean value whether to include upfront costs in the cost budget.
+
+        
+        - **IncludeRecurring** *(boolean) --* A boolean value whether to include recurring costs in the cost budget.
+
+        
+        - **IncludeOtherSubscription** *(boolean) --* A boolean value whether to include other subscription costs in the cost budget.
+
+        
+        - **IncludeSupport** *(boolean) --* A boolean value whether to include support costs in the cost budget.
 
         
       
@@ -279,7 +303,7 @@ Client
             - **SubscriptionType** *(string) --* **[REQUIRED]** The subscription type of the subscriber. It can be SMS or EMAIL.
 
             
-            - **Address** *(string) --* **[REQUIRED]** A generic String.
+            - **Address** *(string) --* **[REQUIRED]** String containing email or sns topic for the subscriber address.
 
             
           
@@ -365,7 +389,7 @@ Client
         - **SubscriptionType** *(string) --* **[REQUIRED]** The subscription type of the subscriber. It can be SMS or EMAIL.
 
         
-        - **Address** *(string) --* **[REQUIRED]** A generic String.
+        - **Address** *(string) --* **[REQUIRED]** String containing email or sns topic for the subscriber address.
 
         
       
@@ -444,7 +468,7 @@ Client
       - **SubscriptionType** *(string) --* **[REQUIRED]** The subscription type of the subscriber. It can be SMS or EMAIL.
 
       
-      - **Address** *(string) --* **[REQUIRED]** A generic String.
+      - **Address** *(string) --* **[REQUIRED]** String containing email or sns topic for the subscriber address.
 
       
     
@@ -625,7 +649,7 @@ Client
       - **SubscriptionType** *(string) --* **[REQUIRED]** The subscription type of the subscriber. It can be SMS or EMAIL.
 
       
-      - **Address** *(string) --* **[REQUIRED]** A generic String.
+      - **Address** *(string) --* **[REQUIRED]** String containing email or sns topic for the subscriber address.
 
       
     
@@ -693,7 +717,13 @@ Client
                 'CostTypes': {
                     'IncludeTax': True|False,
                     'IncludeSubscription': True|False,
-                    'UseBlended': True|False
+                    'UseBlended': True|False,
+                    'IncludeRefund': True|False,
+                    'IncludeCredit': True|False,
+                    'IncludeUpfront': True|False,
+                    'IncludeRecurring': True|False,
+                    'IncludeOtherSubscription': True|False,
+                    'IncludeSupport': True|False
                 },
                 'TimeUnit': 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY',
                 'TimePeriod': {
@@ -754,13 +784,31 @@ Client
           - **CostTypes** *(dict) --* This includes the options for getting the cost of a budget.
             
 
-            - **IncludeTax** *(boolean) --* A generic boolean value.
+            - **IncludeTax** *(boolean) --* A boolean value whether to include tax in the cost budget.
             
 
-            - **IncludeSubscription** *(boolean) --* A generic boolean value.
+            - **IncludeSubscription** *(boolean) --* A boolean value whether to include subscriptions in the cost budget.
             
 
-            - **UseBlended** *(boolean) --* A generic boolean value.
+            - **UseBlended** *(boolean) --* A boolean value whether to use blended costs in the cost budget.
+            
+
+            - **IncludeRefund** *(boolean) --* A boolean value whether to include refunds in the cost budget.
+            
+
+            - **IncludeCredit** *(boolean) --* A boolean value whether to include credits in the cost budget.
+            
+
+            - **IncludeUpfront** *(boolean) --* A boolean value whether to include upfront costs in the cost budget.
+            
+
+            - **IncludeRecurring** *(boolean) --* A boolean value whether to include recurring costs in the cost budget.
+            
+
+            - **IncludeOtherSubscription** *(boolean) --* A boolean value whether to include other subscription costs in the cost budget.
+            
+
+            - **IncludeSupport** *(boolean) --* A boolean value whether to include support costs in the cost budget.
         
           
 
@@ -857,7 +905,13 @@ Client
                     'CostTypes': {
                         'IncludeTax': True|False,
                         'IncludeSubscription': True|False,
-                        'UseBlended': True|False
+                        'UseBlended': True|False,
+                        'IncludeRefund': True|False,
+                        'IncludeCredit': True|False,
+                        'IncludeUpfront': True|False,
+                        'IncludeRecurring': True|False,
+                        'IncludeOtherSubscription': True|False,
+                        'IncludeSupport': True|False
                     },
                     'TimeUnit': 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY',
                     'TimePeriod': {
@@ -923,13 +977,31 @@ Client
             - **CostTypes** *(dict) --* This includes the options for getting the cost of a budget.
               
 
-              - **IncludeTax** *(boolean) --* A generic boolean value.
+              - **IncludeTax** *(boolean) --* A boolean value whether to include tax in the cost budget.
               
 
-              - **IncludeSubscription** *(boolean) --* A generic boolean value.
+              - **IncludeSubscription** *(boolean) --* A boolean value whether to include subscriptions in the cost budget.
               
 
-              - **UseBlended** *(boolean) --* A generic boolean value.
+              - **UseBlended** *(boolean) --* A boolean value whether to use blended costs in the cost budget.
+              
+
+              - **IncludeRefund** *(boolean) --* A boolean value whether to include refunds in the cost budget.
+              
+
+              - **IncludeCredit** *(boolean) --* A boolean value whether to include credits in the cost budget.
+              
+
+              - **IncludeUpfront** *(boolean) --* A boolean value whether to include upfront costs in the cost budget.
+              
+
+              - **IncludeRecurring** *(boolean) --* A boolean value whether to include recurring costs in the cost budget.
+              
+
+              - **IncludeOtherSubscription** *(boolean) --* A boolean value whether to include other subscription costs in the cost budget.
+              
+
+              - **IncludeSupport** *(boolean) --* A boolean value whether to include support costs in the cost budget.
           
             
 
@@ -1149,7 +1221,7 @@ Client
             - **SubscriptionType** *(string) --* The subscription type of the subscriber. It can be SMS or EMAIL.
             
 
-            - **Address** *(string) --* A generic String.
+            - **Address** *(string) --* String containing email or sns topic for the subscriber address.
         
       
         
@@ -1232,7 +1304,13 @@ Client
               'CostTypes': {
                   'IncludeTax': True|False,
                   'IncludeSubscription': True|False,
-                  'UseBlended': True|False
+                  'UseBlended': True|False,
+                  'IncludeRefund': True|False,
+                  'IncludeCredit': True|False,
+                  'IncludeUpfront': True|False,
+                  'IncludeRecurring': True|False,
+                  'IncludeOtherSubscription': True|False,
+                  'IncludeSupport': True|False
               },
               'TimeUnit': 'DAILY'|'MONTHLY'|'QUARTERLY'|'ANNUALLY',
               'TimePeriod': {
@@ -1288,16 +1366,34 @@ Client
         
     
   
-      - **CostTypes** *(dict) --* **[REQUIRED]** This includes the options for getting the cost of a budget.
+      - **CostTypes** *(dict) --* This includes the options for getting the cost of a budget.
 
       
-        - **IncludeTax** *(boolean) --* **[REQUIRED]** A generic boolean value.
+        - **IncludeTax** *(boolean) --* A boolean value whether to include tax in the cost budget.
 
         
-        - **IncludeSubscription** *(boolean) --* **[REQUIRED]** A generic boolean value.
+        - **IncludeSubscription** *(boolean) --* A boolean value whether to include subscriptions in the cost budget.
 
         
-        - **UseBlended** *(boolean) --* **[REQUIRED]** A generic boolean value.
+        - **UseBlended** *(boolean) --* A boolean value whether to use blended costs in the cost budget.
+
+        
+        - **IncludeRefund** *(boolean) --* A boolean value whether to include refunds in the cost budget.
+
+        
+        - **IncludeCredit** *(boolean) --* A boolean value whether to include credits in the cost budget.
+
+        
+        - **IncludeUpfront** *(boolean) --* A boolean value whether to include upfront costs in the cost budget.
+
+        
+        - **IncludeRecurring** *(boolean) --* A boolean value whether to include recurring costs in the cost budget.
+
+        
+        - **IncludeOtherSubscription** *(boolean) --* A boolean value whether to include other subscription costs in the cost budget.
+
+        
+        - **IncludeSupport** *(boolean) --* A boolean value whether to include support costs in the cost budget.
 
         
       
@@ -1506,7 +1602,7 @@ Client
       - **SubscriptionType** *(string) --* **[REQUIRED]** The subscription type of the subscriber. It can be SMS or EMAIL.
 
       
-      - **Address** *(string) --* **[REQUIRED]** A generic String.
+      - **Address** *(string) --* **[REQUIRED]** String containing email or sns topic for the subscriber address.
 
       
     
@@ -1517,7 +1613,7 @@ Client
       - **SubscriptionType** *(string) --* **[REQUIRED]** The subscription type of the subscriber. It can be SMS or EMAIL.
 
       
-      - **Address** *(string) --* **[REQUIRED]** A generic String.
+      - **Address** *(string) --* **[REQUIRED]** String containing email or sns topic for the subscriber address.
 
       
     
